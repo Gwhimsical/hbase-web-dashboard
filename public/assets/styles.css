@@ -6,13 +6,13 @@ body {
   
   header {
     background-color: lightblue;
-    color: white;
+    color: royalblue;
     padding: 1rem;
     text-align: center;
   }
   
   nav a {
-    color: white;
+    color: royalblue;
     text-decoration: none;
     margin: 0 1rem;
   }
@@ -20,7 +20,7 @@ body {
   footer {
     display: flex;
     background-color: lightblue;
-    color: white;
+    color: black;
     text-align: center;
     padding: 10px;
     position: fixed;
@@ -73,4 +73,56 @@ body {
   
   a {
     text-decoration: none;
+    color:royalblue
   }
+
+  a:hover {
+    color:black;
+  }
+
+  .submit-button {
+    background-color: lightblue; 
+    color: white; 
+    font-size: 16px; 
+    font-weight: bold;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+}
+
+.submit-button:hover {
+    background-color: rgb(121, 199, 225); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-2px); 
+}
+
+.submit-button:active {
+    background-color: rgb(61, 91, 101);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+.styled-input {
+  width: 100%;
+  max-width: 400px; 
+  padding: 10px 15px; 
+  font-size: 16px; 
+  border: 2px solid #ccc; 
+  border-radius: 5px;
+  outline: none; 
+  transition: all 0.3s ease; 
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.styled-input:focus {
+  border-color: rgb(121, 199, 225); 
+  box-shadow: 0 0 5px rgb(61, 91, 101);
+}
+
+.styled-input::placeholder {
+  color: #aaa; 
+  font-style: italic; 
+}
