@@ -1,0 +1,29 @@
+<%- include('partials/header'); %>
+
+<body>
+    <h1>Data for Table: <%= tableName %></h1>
+    <% if (rows.length === 0) { %>
+      <p>No data available for this table.</p>
+    <% } else { %>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Row Key</th>
+            <th>Column</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% rows.forEach(row => { %>
+            <tr>
+              <td><%= row.key %></td>
+              <td><%= row.column %></td>
+              <td><%= row.$ %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    <% } %>
+  </body>
+
+<%- include('partials/footer'); %>

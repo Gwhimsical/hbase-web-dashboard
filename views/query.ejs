@@ -1,0 +1,12 @@
+<%- include('partials/header'); %>
+
+<body>
+    <h1>Query a Table</h1>
+    <form action="/table" method="get">
+      <label for="tableName">Enter Table Name:</label>
+      <input type="text" id="tableName" name="tableName" required>
+      <button type="submit">Query</button>
+    </form>
+  </body>
+
+  <%- include('partials/footer'); %>
